@@ -4,27 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Art Gallery 2.0</title>
-    <link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="css/jgallery.css" />
-    <script
-			  src="https://code.jquery.com/jquery-2.0.3.min.js"
-			  integrity="sha256-sTy1mJ4I/LAjFCCdEB4RAvPSmRCb3CU7YqodohyeOLo="
-			  crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jgallery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>About</title>
 </head>
 <body>
-    <div id="gallery">
-            <a href="artwork/lg-custom/lg-bird-ink-pencil.jpg"> <img src="artwork/sm-custom/sm-bird-ink-pencil.jpg" alt="Florida bird in pencil."></a>
-            <a href="artwork/lg-custom/lg-bottle-ink.jpg"><img src="artwork/sm-custom/gif/sm-bottle-ink.gif" alt="Bottle sketched in ink."></a>
-    </div>
-       
+    <div class="container-fluid">
+        <div class="col-sm-12  text-center">
+            <header>
+                <h1 class="my-1 my-sm-3 my-md-5">Mikey Williams</h1>
+                <nav role="navigation" class="my-3">
+                    <ul class="nav">
+                        <a class="nav__button nav-blue" href="gallery.html"><li>Gallery</li></a>
+                    </ul>
+                </nav>
+            </header>
 
-    <script type="text/javascript">
-        $( function() {
-            $( '#gallery' ).jGallery();
-        } );
-        </script>
+        </div>
+    </div>
+    <main>
+        <div class="container-fluid">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="card my-1 my-sm-3 col-md-6">
+                            <div class="card-title">
+                                <h2 class="text-center">Gen. Info</h2>
+                            </div>
+                            <div class="card-body text-center">
+                                <p>
+                                Greetings viewers, my name is Michael Williams. I thought it was time to combine some of my favorite things,
+                                so with a little of help of a jqeury library I threw this site up to post my art work :).
+                                As you can see I am a huge fan of 'Rick and Morty', 'Gravity Falls', and cartoons in general. I am also a
+                                mental health advocate, and feel mental health is an important topic in our life.
+                                </p>
+                                <h3>Why Share?</h3>
+                                <p>It feels odd just placing my artwork out there where anyone could do anything with it without my knowledge.
+                                    But when I critically thought about it. That is what every developer does when they create a pallette,
+                                    a library, a framework, or anything else and put it up on any <strong>shareable service</strong> for everyone with a MIT, GPL v.2, or GPL v.3
+                                among other licenses similar to these. So <em>I felt it was my turn</em>. Also, with that we face the chance of critism,
+                                which (is changing for the better) when we share and upon receiving can turn us off from producing because were afraid
+                                    to ask questions that hold us back from completing projects. Be bold, be strong, and be kind.
+                                </p>      
+                            </div>
+                        </div>
+                        <div class="card col-md-6">
+                            <div class="card-title">
+                                <h2 class="text-center">About Me</h2>
+                            </div>
+                            <div class="card-body text-center">
+                                <p>
+                                So, I am Mikey from sunny Florida. Learning web development, avid art maker, and music fiend/ guitar player.
+                                I enjoy playing with problems and trying to figure out solutions. Love to draw from sketches of scenery, to
+                                cartoons on tv. I like making music and playing with loops and drum beats when I am relaxing.<br>
+                                    some of my future goals:
+                            </p>
+                                    <ul>
+                                        <li>learn a framework</li>
+                                        <li>Learn more about backend</li>
+                                        <li>build some unique personal projects</li>
+                                        <li>apply for a tech position</li>
+                                        <li>Get better at drawing / learn how to use color pencils</li>
+                                        <li>get better at my soft skills</li>
+                                        <li>try to keep a good work / life balance</li>
+                                    </ul>
+                                <p>
+                                    I thank you for visting my site and hope to hear from you on twitter.
+                                    my twitter handle is <a href="https://twitter.com/havocworkshop">@havocworkshop</a> if you would like
+                                    to give comments about my artwork, chat about web development, about art, or anything in general :) 
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+        </div>
+    </main>
     
+    
+    
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

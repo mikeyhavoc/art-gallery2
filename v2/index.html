@@ -4,63 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mikeys Art Gallery</title>
+	<title>Mikeys Art Gallery</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/jquery.gridder.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
+	<script src="js/jquery.gridder.js"></script>
 
-    <script type='text/javascript' src="js/jquery-11.0.min.js"></script>	
-	
-	<script type='text/javascript' src="js/ug-common-libraries.js"></script>
-	<script type='text/javascript' src="js/ug-functions.js"></script>
-	<script type='text/javascript' src="js/ug-thumbsgeneral.js"></script>
-	<script type='text/javascript' src="js/ug-thumbsstrip.js"></script>
-	<script type='text/javascript' src="js/ug-touchthumbs.js"></script>
-	<script type='text/javascript' src="js/ug-panelsbase.js"></script>
-	<script type='text/javascript' src="js/ug-strippanel.js"></script>
-	<script type='text/javascript' src="js/ug-gridpanel.js"></script>
-	<script type='text/javascript' src="js/ug-thumbsgrid.js"></script>
-	<script type='text/javascript' src="js/ug-tiles.js"></script>
-	<script type='text/javascript' src="js/ug-tiledesign.js"></script>
-	<script type='text/javascript' src="js/ug-avia.js"></script>
-	<script type='text/javascript' src="js/ug-slider.js"></script>
-	<script type='text/javascript' src="js/ug-sliderassets.js"></script>
-	<script type='text/javascript' src="js/ug-touchslider.js"></script>
-	<script type='text/javascript' src="js/ug-zoomslider.js"></script>	
-	<script type='text/javascript' src="js/ug-video.js"></script>
-	<script type='text/javascript' src="js/ug-gallery.js"></script>
-	<script type='text/javascript' src="js/ug-lightbox.js"></script>
-	<script type='text/javascript' src="js/ug-carousel.js"></script>
-	<script type='text/javascript' src="js/ug-api.js"></script>
-
-	<link rel="stylesheet" href="css/unite-gallery.css">
-	
-	<script type='text/javascript' src="js/ug-theme-default.js"></script>
-<link rel='stylesheet' href="css/ug-theme-default.css">
 </head>
 <body>
-
-    <h1>Photo Drawing Gallery</h1>
-
-    <div id="gallery" class="ug-thumbs-wrapper ug-tile ug-tiletype-columns ug-tiles-transit ug-tiles-rest-mode">
-
-        <img src="artwork/sm-fan/sm-acid-rick.jpg" alt="Acid droplet Rick"
-        data-image="artwork/lg-fan/lg-acid-rick-color.jpg"
-        data-description="Rick dripping down the canvas.">
-
-        <img src="artwork/sm-custom/sm-bird-ink-pencil.jpg" alt="Bird crane in pencil and sharpie"
-        data-image="artwork/lg-custom/lg-bird-ink-pencil.jpg"
-        data-description="Crane bird in sharpie and pencil shading.">
-
-        
+<div class="row">
+	<div class="container">
+		<div class="col-sm-12 text-center my-1 my-sm-3 my-md-5">
+			<h1>Photo Drawing Gallery</h1>
+		</div>
 	</div>
+</div>
+div.
 	
-	<script type="text/javascript">
-		jQuery(document).ready(function(){
-			jQuery("#gallery").unitegallery({
-				tiles_type: "justified"
-			});
-		});
-		
+	<ul class="gridder">
+			<li class="gridder-list" data-griddercontent="#content1">
+				<img src="artwork/sm-fan/sm-acid-rick.jpg" alt="A melting Rick off the canvas.">
+			</li>
+	</ul>
+
+
+
+	
+	
+	<div id="content1" class="gridder-content"><img src="artwork/lg-fan/lg-acid-rick-color.jpg" alt="A Melting Rick off the canvas."></div>
+	
+	<script>
+	// Call Gridder
+	$('.gridder').gridderExpander({
+                                scroll: true,
+                                scrollOffset: 30,
+                                scrollTo: "panel", // panel or listitem
+                                animationSpeed: 400,
+                                animationEasing: "easeInOutExpo",
+                                showNav: true, // Show Navigation
+                                nextText: "", // Next button text
+                                prevText: "", // Previous button text
+                                closeText: "", // Close button text
+                                onStart: function () {
+                                    //Gridder Inititialized
+                                    console.log('On Gridder Initialized...');
+                                },
+                                onContent: function () {
+                                    //Gridder Content Loaded
+                                    console.log('On Gridder Expand...');
+                                },
+                                onClosed: function () {
+                                    //Gridder Closed
+                                    console.log('On Gridder Closed...');
+                                }
+                            });
 	</script>
-    
 </body>
 </html>

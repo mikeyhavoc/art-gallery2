@@ -40,7 +40,7 @@
 
     <h1>Photo Drawing Gallery</h1>
 
-    <div id="gallery" style="display:none;">
+    <div id="gallery" class="ug-thumbs-wrapper ug-tile ug-tiletype-columns ug-tiles-transit ug-tiles-rest-mode">
 
         <img src="artwork/sm-fan/sm-acid-rick.jpg" alt="Acid droplet Rick"
         data-image="artwork/lg-fan/lg-acid-rick-color.jpg"
@@ -51,7 +51,16 @@
         data-description="Crane bird in sharpie and pencil shading.">
 
         
-    </div>
+	</div>
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery("#gallery").unitegallery({
+				tiles_type: "justified"
+			});
+		});
+		
+	</script>
     
 </body>
 </html>

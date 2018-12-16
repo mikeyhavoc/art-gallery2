@@ -16,14 +16,9 @@
 </head>
 <body>
 
-    <div id="gallery cbOverlay">
+    <div id="gallery ">
 
-            <!--personal artwork-->
-           <!--<li>-->
-            <!--<img data-toggle="modal" data-target="#pictures" id="img-fluid img-thumbnail" src="artwork/sm-custom/sm-bird-ink-pencil.jpg" alt="Florida bird in pencil.">-->
-           <!--</li>-->
-
-            <a id="gallery1" href="artwork/lg-custom/lg-bird-ink-pencil.jpg"><img id="img-fluid img-thumbnail" src="artwork/sm-custom/sm-bird-ink-pencil.jpg" alt="Florida bird in pencil."></a>
+            <a id="gallery1" class="img-fluid img-thumbnail" href="artwork/lg-custom/lg-bird-ink-pencil.jpg"><img id="img-fluid img-thumbnail" src="artwork/sm-custom/sm-bird-ink-pencil.jpg" alt="Florida bird in pencil."></a>
             <a id="gallery1" href="artwork/lg-custom/lg-bottle-ink.jpg"><img src="artwork/sm-custom/gif/sm-bottle-ink.gif" alt="Bottle sketched in ink."></a>
             <a id="gallery1" href="artwork/lg-custom/lg-candle-holder.jpg"><img src="artwork/sm-custom/sm-candle-holder.jpg" alt="Pencil sketch of a candle holder"></a>
             <a id="gallery1" href="artwork/lg-custom/lg-fish-jelly-ink.jpg"><img src="artwork/sm-custom/sm-fish-jelly-ink.jpg" alt="ink sketch of a fish and jelly fish"></a>
@@ -89,6 +84,7 @@
                 rowHeight: 50,
                 lastRow: 'noJustify',
                 margins: 2,
+                randomize: true,
                 rel: 'gallery'
             });
             $('a#gallery1').colorbox(console.log('test'));

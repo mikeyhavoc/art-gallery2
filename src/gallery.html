@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Art Gallery 2.0</title>
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet"  href="css/jgallery.css" />
-    <script
-			  src="https://code.jquery.com/jquery-2.0.3.min.js"
-			  integrity="sha256-sTy1mJ4I/LAjFCCdEB4RAvPSmRCb3CU7YqodohyeOLo="
-			  crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jgallery.min.js"></script>
+    <link rel="stylesheet"  href="justified-gallery/css/justifiedGallery.min.css" />
+    
+    
+
+    
 </head>
 <body>
+
     <div id="gallery">
 
-        <div class="album" data-jgallery-album-title="Custom Work">
-            <a href="artwork/lg-custom/lg-bird-ink-pencil.jpg"><img src="artwork/sm-custom/sm-bird-ink-pencil.jpg" alt="Florida bird in pencil."></a>
+            <!--personal artwork-->
+            <a href="artwork/lg-custom/lg-bird-ink-pencil.jpg"><img class="img-fluid img-thumbnail" src="artwork/sm-custom/sm-bird-ink-pencil.jpg" alt="Florida bird in pencil."></a>
             <a href="artwork/lg-custom/lg-bottle-ink.jpg"><img src="artwork/sm-custom/gif/sm-bottle-ink.gif" alt="Bottle sketched in ink."></a>
             <a href="artwork/lg-custom/lg-candle-holder.jpg"><img src="artwork/sm-custom/sm-candle-holder.jpg" alt="Pencil sketch of a candle holder"></a>
             <a href="artwork/lg-custom/lg-fish-jelly-ink.jpg"><img src="artwork/sm-custom/sm-fish-jelly-ink.jpg" alt="ink sketch of a fish and jelly fish"></a>
@@ -39,8 +39,8 @@
             <a href="artwork/lg-custom/gif/lg-mike-name-pencil.gif"><img src="artwork/sm-custom/gif/sm-mike-ink.gif" alt="Mike in design style layout"></a>
             <a href="artwork/lg-custom/gif/lg-parrot-fish-ink.gif"><img src="artwork/sm-custom/gif/sm-parrot-fish-ink.gif" alt="parrot fish in cross hatch design"></a>
             <a href="artwork/lg-custom/gif/lg-puffer-fish-ink.gif"><img src="artwork/sm-custom/gif/sm-puffer-fish-ink.gif" alt="puffer fish in cross hatching design"></a>
-        </div>
-        <div class="album" data-jgallery-album-title="Fan Art">
+        
+            <!-- fan art work-->
             <a href="artwork/lg-fan/lg-acid-rick-color.jpg"><img src="artwork/sm-fan/sm-acid-rick.jpg" alt="melting rick sanchez"></a>
             <a href="artwork/lg-fan/lg-angry-cypher-ink.jpg"><img src="artwork/sm-fan/sm-angry-cypher-ink.jpg" alt="Angry Cypher Bill"></a>
             <a href="artwork/lg-fan/lg-bill-cypher-flames-ink.jpg"><img src="artwork/sm-fan/sm-bill-cypher-flames-ink.jpg" alt="Cypher bill surrounded by Flames"></a>
@@ -72,12 +72,15 @@
             <a href="artwork/lg-fan/lg-waddles-pencil.jpg"><img src="artwork/sm-fan/sm-waddles-pencil.jpg" alt="waddles the pig"></a>
             <a href="artwork/lg-fan/lg-wild-rick.jpg"><img src="artwork/sm-fan/sm-wild-rick.jpg" alt="wild rick"></a>
             <a href="artwork/lg-fan/lg-zombie-ink.jpg"><img src="artwork/sm-fan/sm-zombie-ink.jpg" alt="zombie from Gravity Falls"></a>
-        </div>
+        
     </div>
-
-    <script type="text/javascript">
+    <script  src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script>
+    <script src="justified-gallery/js/jquery.justifiedGallery.js"></script>
         $( function() {
-            $( '#gallery' ).jGallery({ mode: 'full-screen' });
+            $('#gallery').justifiedGallery(rowHeight: 180);
+            $('#gallery').justifiedGallery(randomize": true);
+            $('#gallery').justifiedGallery().on('jg.complete');
+           
         } );
         </script>
     

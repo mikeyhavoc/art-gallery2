@@ -1,8 +1,0 @@
-(A) 2018-10-25 set up mock of index.html page. @gallery +homepage
-(B) 2018-10-25 research image galleries for use. @gallery +homepage
-[ ] 2018-10-25 If need be reoptiimize images for use in new gallery. @gallery +homepage 
-[ ] 2018-10-25 start to incorporate small number of images into gallery and test in production setting. @gallery +homepage +testing
-[ ] 2018-10-25 If testing works, incorporate rest of images into gallery. @gallery +homepage 
-[ ] 2018-10-25 Feature, if could add filtering of some sort for images. @gallery +feature 
-[ ] 2018-10-25 Add about page, to site docs folder. @gallery +aboutpage
-[ ] 2018-10-25 Rework anything needed in About Page. @gallery +aboutpage +feature
